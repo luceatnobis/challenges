@@ -1,0 +1,20 @@
+In cryptography, a substitution cipher is a method of encryption by which units of plaintext are replaced with ciphertext, according to a regular system; the "units" may be single letters (the most common), pairs of letters, triplets of letters, mixtures of the above, and so forth.
+The receiver deciphers the text by performing an inverse substitution.
+Substitution ciphers can be compared with transposition ciphers.
+In a transposition cipher, the units of the plaintext are rearranged in a different and usually quite complex order, but the units themselves are left unchanged.
+By contrast, in a substitution cipher, the units of the plaintext are retained in the same sequence in the ciphertext, but the units themselves are altered.
+There are a number of different types of substitution cipher.
+If the cipher operates on single letters, it is termed a simple substitution cipher; a cipher that operates on larger groups of letters is termed polygraphic.
+A monoalphabetic cipher uses fixed substitution over the entire message, whereas a polyalphabetic cipher uses a number of substitutions at different positions in the message, where a unit from the plaintext is mapped to one of several possibilities in the ciphertext and vice versa.
+Substitution of single letters separately—simple substitution—can be demonstrated by writing out the alphabet in some order to represent the substitution.
+This is termed a substitution alphabet.
+The cipher alphabet may be shifted or reversed (creating the Caesar and Atbash ciphers, respectively) or scrambled in a more complex fashion, in which case it is called a mixed alphabet or deranged alphabet.
+Traditionally, mixed alphabets may be created by first writing out a keyword, removing repeated letters in it, then writing all the remaining letters in the alphabet in the usual order.
+A disadvantage of this method of derangement is that the last letters of the alphabet (which are mostly low frequency) tend to stay at the end.
+A stronger way of constructing a mixed alphabet is to perform a columnar transposition on the ordinary alphabet using the keyword, but this is not often done.
+Although the number of possible keys is very large (26! ≈ 288.4, or about 88 bits), this cipher is not very strong, and is easily broken.
+Provided the message is of reasonable length (see below), the cryptanalyst can deduce the probable meaning of the most common symbols by analyzing the frequency distribution of the ciphertext—frequency analysis.
+This allows formation of partial words, which can be tentatively filled in, progressively expanding the (partial) solution (see frequency analysis for a demonstration of this).
+In some cases, underlying words can also be determined from the pattern of their letters; for example, attract, osseous, and words with those two as the root are the only common English words with the pattern ABBCADB.
+Many people solve such ciphers for recreation, as with cryptogram puzzles in the newspaper.
+According to the unicity distance of English, 27.

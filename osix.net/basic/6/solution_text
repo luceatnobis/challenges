@@ -1,0 +1,123 @@
+Winamp has a built-in minibrowser to show information about songs being played
+(enabled by default). For every song that is being played under Winamp, the
+program will direct the minibrowser to an URL of the sorts of:
+http://info.winamp.com/winamp/WA.html?Alb=&Art=&Cid=winamp&Tid=&Track=Brick.
+Where Winamp will get the title/artist/album information from the ID3v1/ID3v2
+tag in the MP3 file.
+A problem in the program has been found that allows attackers to include HTML
+tags in these fields (title/artist/album) causing the program to execute
+malicious HTML and JavaScript code. This vulnerability is effectively a Cross
+Site Scripting vulnerability..
+
+The InterNetNews package (INN) is a complete Usenet system. It includes innd, an
+NNTP server, and nnrpd, a news-reading server. INN separates hosts that feed
+you news from those that have users reading news. Several security
+vulnerabilities have been found in the product that allows attackers to cause
+the program to execute arbitrary code.
+
+LogWatch is a customizable, pluggable log-monitoring system. It will go through
+your logs for a given period and make a report in the areas that you wish with
+the detail that you wish. Easy to use - works right out of the package on
+almost all systems. A race condition in the product can be used by local
+attackers to gain root privileges. The following is an explanation on how to
+exploit the vulnerability through the SSH daemon (and FTPd).
+
+The program /usr/bin/mail is a simple mail user agent that can be used also in
+the batch mode, for example to send mail to the administrator when running cron
+tasks. There is a local root compromise in all versions of OpenBSD including
+OpenBSD Current prior to April 9, 2002 due to a bug in program /usr/bin/mail.
+The following is an exploit code that can be used by administrators to verify
+whether they are vulnerable or not.
+For additional information on this vulnerability, please see our previous
+article:
+/usr/bin/mail OpenBSD Local Root Compromise (Escaping Tilde)
+
+Posadis DNS server is a simple DNS server designed for Win32 and Linux, which
+will support administration through a web interface. The log_print function is
+badly written allowing an attacker to cause a format string vulnerability in
+the product or overflow an internal buffer causing a buffer overflow
+vulnerability, both these allow remote code execution. The following are
+exploit codes that can be used by administrators to test their for the
+mentioned vulnerabilities.
+
+GNU Awk (gawk) is a pattern scanning and processing language and implementation
+of the AWK programming language. An exploitable stack overflow has been found
+in the product that allows attackers to execute arbitrary code by overflowing
+its internal buffers.
+It is possible for a local user under the FreeBSD operating system to execute a
+suid application with its stdin, stdout, or stderr closed. The following
+exploit code can be used to test your system against the mentioned
+vulnerability.
+for more information about the vulnerability please see: Suid Application
+Execution May Give Local Root.
+
+psyBNC has a problem dealing with oversized passwords, making it possible to tie
+up all the connection slots and consume a lot of CPU on the server.
+
+Matu FTP is a Japanese FTP client software for Win32 Platform. An exploitable
+buffer overflow problem has been found. The buffer overflow allows execution of
+arbitrary code.
+XTux Arena is a client server network game for X11 featuring open-source
+mascots. Players can compete in a multiplayer death match mode (called holy
+war) or play against the computer (cooperative multiplayer supported) in a
+mission against Microsoft. A security vulnerability in the product allows
+remote attackers to cause a denial of service attack against the product.
+
+MTR is a network diagnostic tool that combines 'ping' and 'traceroute' into one
+program. A security vulnerability in the product allows execution of arbitrary
+code, and gaining of elevated privileges. It should be noted that MTR's author
+does not recommend that the program be executed a setuid "root".
+
+Citadel/UX is an advanced client/server BBS program for operating highly
+interactive sites, both on the Internet and over dialup. Users can connect to
+Citadel/UX using any of telnet, WWW, or "client software". Among the features
+supported are public and private message bases (rooms), electronic mail,
+real-time chat, paging, etc. The server is multithreaded and can easily support
+a large number of concurrent users. In addition, SMTP and POP3 servers are
+built-in for easy connection to Internet mail. Citadel/UX is both robust and
+mature, having been developed over the course of the past twelve years. A
+buffer overflow in the product allows an attacker to cause a denial of service
+attack against the product.
+
+SunSolve CD access CGIs allows remote attackers to cause the CGI to execute
+arbitrary code by inputting it a specially crafted HTTP request.
+
+phpBB is a high powered, fully scalable, and highly customizable forums package.
+phpBB has a user-friendly interface, simply and straight-forward administration
+panel, and helpful FAQ. The only way to get rid of your problem is to use the
+term which follows in the input form: "mephisto". More security bugs are known.
+A security vulnerability in the product allows attackers to cause it to execute
+arbitrary code by including an external file (by causing 'include' directive to
+URL reference a file instead of using the normal directory access).
+
+As we reported in our previous article: Buffer Overflow in /bin/login, a
+security vulnerability in the product allows remote attackers to cause an
+overflow in the /bin/login binary causing it to execute arbitrary code, thus
+allowing gaining of arbitrary privileges.
+
+As we reported in our previous article: Double Free Bug in Zlib Compression
+Library, a security vulnerability in Zlib allows attackers to cause the program
+to incorrectly double free a memory section causing a "denial of service attack".
+The following is an example of an exploit that can be used against "OpenSSH".
+
+LogWatch is a customizable, pluggable log-monitoring system. It will go through
+your logs for a given period and make a report in the areas that you wish with
+the detail that you wish. Easy to use - works right out of the package on
+almost all systems. This is like DailyScript, but much, much better... and
+designed for RHL5. A /tmp race condition in the product can be used by local
+attackers to gain "root" privileges.
+
+A security vulnerability in "Oracle9i" ("Unbreakable") Database Server has been
+found, the vulnerability would allow remote attackers to cause the server's
+TSNLISTEN service to crash disallowing any legitimate requests from being
+handled by the remote server.
+
+There is a remotely exploitable buffer overflow in all versions of the ICECast
+MP3 streaming server. The vulnerability can be tested against by utilizing the
+below exploit code.
+
+"Tarantella Enterprise" has been found to contain a permissions problem on some of
+its temporary files that are used during the installation process. This would
+allow an attacker to gain elevated privileges.
+
+###########

@@ -1,0 +1,920 @@
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
+<html xmlns='http://www.w3.org/1999/xhtml' xml:lang='en' lang='en'>
+<head>
+<title>Security Override - Decryption Level 8</title>
+<meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1' />
+<meta name='description' content='' />
+<meta name='keywords' content='' />
+<meta name='google-site-verification' content='_URiIz5utxA-B0Xu4FfYTYvGP0g1-Ey2CJrjQAOCnxE' />
+
+<link rel='stylesheet' href='../../../themes/SO Blue/styles.css' type='text/css' media='screen' />
+
+<link type='text/css' rel='stylesheet' media='all' href='/chat/css/chat.css' />
+<link type='text/css' rel='stylesheet' media='all' href='/chat/css/screen.css' />
+<!--[if lte IE 7]>
+<link type='text/css' rel='stylesheet' media='all' href='/chat/css/screen_ie.css' />
+<![endif]-->
+
+<link rel='alternate' type='application/rss+xml' title='RSS - Forum' href='../../../rss/rss_f.php' />
+<link rel='alternate' type='application/rss+xml' title='RSS - News Links' href='../../../rss/rss_w.php' />
+<link rel='alternate' type='application/rss+xml' title='RSS - News' href='../../../rss/rss_n.php' />
+<link rel='alternate' type='application/rss+xml' title='RSS - New Articles' href='../../../rss/rss_a.php' />
+<link rel='alternate' type='application/rss+xml' title='RSS - New Photo' href='../../../rss/rss_p.php' />
+<link rel='alternate' type='application/rss+xml' title='RSS - New Programms' href='../../../rss/rss_d.php' />
+<link rel='shortcut icon' href='../../../images/favicon.ico' type='image/x-icon' />
+<script type='text/javascript' src='../../../includes/jscript.js'></script>
+<script type='text/javascript' src='../../../includes/jquery.js'></script><link rel='stylesheet' href='../../../includes/gallery/gallery.css' type='text/css' media='screen' />
+<script type='text/javascript' src='../../../includes/gallery/s3Slider.js' ></script>
+
+	<script type='text/javascript' src='../../../infusions/newsticker_panel/inc/jquery.newsticker.js'></script>
+	<script type='text/javascript'>
+var $js = jQuery.noConflict();
+	$js(document).ready(
+		function() {
+
+
+			$js('#news').newsTicker();
+			$js('#news').show('fast');
+		}
+	);
+	</script>
+	<style type='text/css'>
+	.newsticker {
+		display: none;
+		list-style-type: none;
+		padding: 3px;
+		margin: 0;
+		font-size: 12px;
+	}
+	</style>
+
+</head>
+<body>
+<div class='outer'><div id='top-header'>
+<span id='timespan' style='text-align:left;float:left'>Friday, September 28, 2012 </span><script type='text/javascript'>
+
+function updateTime() {
+
+	var currentTime = new Date ();
+
+	var currentHours = currentTime.getHours ();
+	var currentMinutes = currentTime.getMinutes ();
+	var currentSeconds = currentTime.getSeconds ();
+
+	currentMinutes = (currentMinutes < 10 ? '0' : '' ) + currentMinutes;
+	currentSeconds = (currentSeconds < 10 ? '0' : '' ) + currentSeconds;
+
+	var timeOfDay = ( currentHours < 12 ) ? 'AM' : 'PM';
+
+	currentHours = ( currentHours > 12 ) ? currentHours - 12 : currentHours;
+	currentHours = ( currentHours == 0 ) ? 12 : currentHours;
+
+	var currentTimeString = 'Friday, September 28, 2012 ' + currentHours + ':' + currentMinutes + ':' + currentSeconds + ' ' + timeOfDay;
+
+	document.getElementById('timespan').firstChild.nodeValue = currentTimeString;
+	
+	setTimeout('updateTime()', 1000);
+
+}
+
+updateTime();
+
+</script>
+
+<a href='../../../edit_profile.php'>Edit Profile</a>
+&middot; <a href='../../../messages.php'>Private Messages</a>
+&middot; <a href='../../../members.php'>Members List</a>
+&middot; <a href='../../../setuser.php?logout=yes'>Logout</a>
+</div>
+<div id='header' class='clearfix'>
+<img src='/themes/SO Blue/images/logoblue.png' alt='SecurityOverride.com' />
+</div>
+<div class='navbar' id='navbar'>
+<ul class='navtabs floatcontainer' id='navtabs'>
+<ul>
+<li class='first-link'> <a href='../../../index.php'><span>Home</span></a></li>
+<li> <a href='../../../news_cats.php'><span>News</span></a></li>
+<li> <a href='../../../forum/index.php'><span>Forum</span></a></li>
+<li> <a href='../../../search.php'><span>Search</span></a></li>
+</ul>
+
+</ul><ul style='position: absolute;  margin-left: 840px; margin-top: 5px;'>
+<a href='https://twitter.com/secoverride' class='twitter-follow-button' data-show-count='false' data-lang='en' style='margin-right: 145px;'>Follow @SecOverride</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='//platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','twitter-wjs');</script>
+</ul>
+<div class='subnav' id='subnav'>
+<ul style='list-style: none;'><li><a href='/articles.php'>Articles</a></li></ul><ul style='list-style: none;'><li><a href='/codebank.php'>Code Bank</a></li></ul><ul style='list-style: none;'><li><a href='/infusions/pro_download_panel/download.php'>Downloads</a></li></ul><ul style='list-style: none;'><li><a href='/challenges/index.php'>Hacking Challenges</a></li></ul><ul style='list-style: none;'><li><a href='/irc/'>IRC</a></li></ul><ul style='list-style: none;'><li><a href='/contact.php'>Contact Us</a></li></ul></div>
+<div class='subnavtime' id='subnav'>
+<ul id='news' class='newsticker'>
+<li style=''><a href='../../../news.php?readmore=69' title='New Moderators'><i>Thursday 23. August 2012</i> - New Moderators</a></li>
+<li style=''><a href='../../../news.php?readmore=68' title='Domain Frenzy'><i>Wednesday 25. April 2012</i> - Domain Frenzy</a></li>
+<li style=''><a href='../../../news.php?readmore=67' title='We Got Our COM Back '><i>Friday 20. April 2012</i> - We Got Our COM Back </a></li>
+<li style=''><a href='../../../news.php?readmore=66' title='Forensics Challenge 10'><i>Friday  6. January 2012</i> - Forensics Challenge 10</a></li>
+<li style=''><a href='../../../news.php?readmore=65' title='New Steganography Challenge'><i>Thursday 13. October 2011</i> - New Steganography Challenge</a></li>
+</ul>
+</div>
+</div>
+<div id='container' class='clearfix side-both'>
+<div id='side-border-left'><div class='side-border'>
+<div class='side-caption'><table cellpadding='0' cellspacing='0' width='100%'>
+<tr><td class='osblock-L'></td><td class='osblock-C'>&nbsp;&nbsp;&nbsp;&nbsp;Navigation</td><td class='osblock-R'></td></tr></table></div>
+<div class='side-body floatfix'>
+<div id='navigation'>
+<h2>SecurityOverride</h2>
+<ul>
+<li><a href='../../../index.php' class='side'>&middot; <span>Home</span></a></li>
+<li><a href='../../../news_cats.php' class='side'>&middot; <span>News</span></a></li>
+<li><a href='../../../forum/viewforum.php?forum_id=3' class='side'>&middot; <span>Announcements</span></a></li>
+<li><a href='../../../contact.php' class='side'>&middot; <span>Contact Us</span></a></li>
+<li><a href='../../../irc/' class='side'>&middot; <span>IRC - Channel</span></a></li>
+<li><a href='../../../infusions/roadmap/roadmap.php' class='side'>&middot; <span>Bugtracker</span></a></li>
+<li><a href='../../../linktous.php' class='side'>&middot; <span>Link To Us</span></a></li>
+<li><a href='../../../search.php' class='side'>&middot; <span>Search</span></a></li>
+<li><a href='../../../challenges/index.php' class='side'>&middot; <span>Hacking Challenges</span></a></li>
+<li><a href='../../../infusions/community_stats_panel/community_stats.php' class='side'>&middot; <span>Community Stats</span></a></li>
+<li><a href='../../../mobile/' class='side'>&middot; <span>mobileSO</span></a></li>
+<li><a href='../../../p_votes.php' class='side'>&middot; <span>Progenic Vote Stats</span></a></li>
+</ul>
+<h2>Information</h2>
+<ul>
+<li><a href='../../../articles.php' class='side'>&middot; <span>Articles</span></a></li>
+<li><a href='../../../codebank.php' class='side'>&middot; <span>Code Bank</span></a></li>
+<li><a href='../../../infusions/pro_download_panel/download.php' class='side'>&middot; <span>Downloads</span></a></li>
+<li><a href='../../../forum/index.php' class='side'>&middot; <span>Discussion Forum</span></a></li>
+<li><a href='../../../irc/' class='side'>&middot; <span>IRC</span></a></li>
+<li><a href='../../../default-password-list/' class='side'>&middot; <span>Default Password List  </span></a></li>
+<li><a href='../../../Proxy/The-Proxy-List.php' class='side'>&middot; <span>The Proxy List</span></a></li>
+<li><a href='../../../articles.php?article_id=13' class='side'>&middot; <span>Guide to XSS </span></a></li>
+<li><a href='../../../articles.php?article_id=1' class='side'>&middot; <span>Guide to SQL Injection  </span></a></li>
+<li><a href='../../../Calculator.php' class='side'>&middot; <span>Pen-Testing Calculator</span></a></li>
+</ul>
+<h2>Submit Content</h2>
+<ul>
+<li><a href='../../../submit.php?stype=a' class='side'>&middot; <span>Submit Article</span></a></li>
+<li><a href='../../../submit.php?stype=c' class='side'>&middot; <span>Submit Code</span></a></li>
+<li><a href='../../../infusions/pro_download_panel/edit_desc.php' class='side'>&middot; <span>Submit Download</span></a></li>
+</ul>
+<h2>Hacking Challenges</h2>
+<ul>
+<li><a href='../../../challenges/' class='side'>&middot; <span>All Challenges</span></a></li>
+<li><a href='../../../challenges/reconnaissance/' class='side'>&middot; <span>Reconnaissance</span></a></li>
+<li><a href='../../../challenges/basic/' class='side'>&middot; <span>Basic</span></a></li>
+<li><a href='../../../challenges/javascript/' class='side'>&middot; <span>JavaScript</span></a></li>
+<li><a href='../../../challenges/decryption/' class='side'>&middot; <span>Decryption</span></a></li>
+<li><a href='../../../challenges/privilege_escalation/' class='side'>&middot; <span>Privilege Escalation
+</span></a></li>
+<li><a href='../../../challenges/forensics/' class='side'>&middot; <span>Forensics</span></a></li>
+<li><a href='../../../challenges/steganography' class='side'>&middot; <span>Steganography</span></a></li>
+<li><a href='../../../challenges/programming/' class='side'>&middot; <span>Programming</span></a></li>
+<li><a href='../../../challenges/software_cracking/' class='side'>&middot; <span>Software Cracking</span></a></li>
+<li><a href='../../../challenges/patching/' class='side'>&middot; <span>Patching</span></a></li>
+<li><a href='../../../challenges/logic/' class='side'>&middot; <span>Logic</span></a></li>
+<li><a href='../../../challenges/realistic/' class='side'>&middot; <span>Realistic</span></a></li>
+<li><a href='../../../challenges/scoreboard.php' class='side'>&middot; <span>The Scoreboard</span></a></li>
+</ul>
+</div>
+</div>
+</div>
+<table cellpadding='0' cellspacing='0' width='100%'>
+<tr><td class='csblock-L'></td><td class='csblock-C'>&nbsp;</td><td class='csblock-R'></td></tr></table>
+<br /><div class='side-border'>
+<div class='side-caption'><table cellpadding='0' cellspacing='0' width='100%'>
+<tr><td class='osblock-L'></td><td class='osblock-C'>&nbsp;&nbsp;&nbsp;&nbsp;Challenge Activity</td><td class='osblock-R'></td></tr></table></div>
+<div class='side-body floatfix'>
+<div id='challactiv'><table>
+<tr>
+<td class='tbl4'>10:28:21 - <a href='/profile.php?lookup=7085&username=xsiemich' title='xsiemich'>xsiemich</a>
+<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Completed basic [12]</td></tr><tr>
+<td class='tbl4'>08:52:00 - <a href='/profile.php?lookup=7375&username=amitprakasharya' title='amitprakasharya'>amitprakasharya</a>
+<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Completed basic [3]</td></tr><tr>
+<td class='tbl4'>07:38:32 - <a href='/profile.php?lookup=7741&username=bigdasahjada' title='bigdasahjada'>bigdasahjada</a>
+<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Completed recon [3]</td></tr><tr>
+<td class='tbl4'>06:45:38 - <a href='/profile.php?lookup=7824&username=hieuht' title='hieuht'>hieuht</a>
+<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Completed js [7]</td></tr><tr>
+<td class='tbl4'>06:37:16 - <a href='/profile.php?lookup=7843&username=Sanjeevbiswal' title='Sanjeevbiswal'>Sanjeevbiswal</a>
+<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Completed recon [1]</td></tr><tr>
+<td class='tbl4'>05:40:29 - <a href='/profile.php?lookup=7842&username=mcgogo123' title='mcgogo123'>mcgogo123</a>
+<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Completed recon [1]</td></tr><tr>
+<td class='tbl4'>04:12:26 - <a href='/profile.php?lookup=3335&username=dennis' title='dennis'>dennis</a>
+<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Completed forensics [2]</td></tr><tr>
+<td class='tbl4'>04:05:09 - <a href='/profile.php?lookup=3335&username=dennis' title='dennis'>dennis</a>
+<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Completed forensics [1]</td></tr><tr>
+<td class='tbl4'>03:45:12 - <a href='/profile.php?lookup=7375&username=amitprakasharya' title='amitprakasharya'>amitprakasharya</a>
+<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Completed js [9]</td></tr><tr>
+<td class='tbl4'>03:28:58 - <a href='/profile.php?lookup=4842&username=sabretooth' title='sabretooth'>sabretooth</a>
+<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Completed decrypt [5]</td></tr><tr>
+<td class='tbl4'>02:48:21 - <a href='/profile.php?lookup=3335&username=dennis' title='dennis'>dennis</a>
+<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Completed basic [2]</td></tr><tr>
+<td class='tbl4'>01:32:15 - <a href='/profile.php?lookup=4842&username=sabretooth' title='sabretooth'>sabretooth</a>
+<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Completed forensics [7]</td></tr><tr>
+<td class='tbl4'>01:12:02 - <a href='/profile.php?lookup=7613&username=vishal_tomer' title='vishal_tomer'>vishal_tomer</a>
+<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Completed real [2]</td></tr><tr>
+<td class='tbl4'>01:04:50 - <a href='/profile.php?lookup=7716&username=NaDi' title='NaDi'>NaDi</a>
+<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Completed basic [2]</td></tr><tr>
+<td class='tbl4'>01:01:54 - <a href='/profile.php?lookup=7716&username=NaDi' title='NaDi'>NaDi</a>
+<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Completed basic [1]</td></tr><tr>
+<td class='tbl4'>12:53:16 - <a href='/profile.php?lookup=7613&username=vishal_tomer' title='vishal_tomer'>vishal_tomer</a>
+<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Completed real [1]</td></tr></table></div></div>
+</div>
+<table cellpadding='0' cellspacing='0' width='100%'>
+<tr><td class='csblock-L'></td><td class='csblock-C'>&nbsp;</td><td class='csblock-R'></td></tr></table>
+<br /><div class='side-border'>
+<div class='side-caption'><table cellpadding='0' cellspacing='0' width='100%'>
+<tr><td class='osblock-L'></td><td class='osblock-C'>&nbsp;&nbsp;&nbsp;&nbsp;Scoreboard Top 20</td><td class='osblock-R'></td></tr></table></div>
+<div class='side-body floatfix'>
+<div id="scoreboardpanel"><table width='170'><th>User</th><th>Points</th><tr><td><a href='/profile.php?lookup=2135'> PublicEnemy</a></td><td>5895&nbsp;&nbsp;&nbsp;   </td></tr>
+<tr><td><a href='/profile.php?lookup=618'> auditorsec</a></td><td>5810&nbsp;&nbsp;&nbsp;   </td></tr>
+<tr><td><a href='/profile.php?lookup=1041'> Null Set</a></td><td>5780&nbsp;&nbsp;&nbsp;   </td></tr>
+<tr><td><a href='/profile.php?lookup=15'> ne011</a></td><td>5750&nbsp;&nbsp;&nbsp;   </td></tr>
+<tr><td><a href='/profile.php?lookup=27'> preet</a></td><td>5750&nbsp;&nbsp;&nbsp;   </td></tr>
+<tr><td><a href='/profile.php?lookup=2'> Qwexotic</a></td><td>5660&nbsp;&nbsp;&nbsp;   </td></tr>
+<tr><td><a href='/profile.php?lookup=4778'> dloser</a></td><td>5625&nbsp;&nbsp;&nbsp;   </td></tr>
+<tr><td><a href='/profile.php?lookup=3183'> noother</a></td><td>5575&nbsp;&nbsp;&nbsp;   </td></tr>
+<tr><td><a href='/profile.php?lookup=11'> Teddy</a></td><td>5560&nbsp;&nbsp;&nbsp;   </td></tr>
+<tr><td><a href='/profile.php?lookup=5031'> Rap70r</a></td><td>5515&nbsp;&nbsp;&nbsp;   </td></tr>
+<tr><td><a href='/profile.php?lookup=899'> dearmo</a></td><td>5410&nbsp;&nbsp;&nbsp;   </td></tr>
+<tr><td><a href='/profile.php?lookup=836'> OnlyHuman</a></td><td>5370&nbsp;&nbsp;&nbsp;   </td></tr>
+<tr><td><a href='/profile.php?lookup=1151'> TurboBorland</a></td><td>5350&nbsp;&nbsp;&nbsp;   </td></tr>
+<tr><td><a href='/profile.php?lookup=889'> KnightCrawler</a></td><td>5280&nbsp;&nbsp;&nbsp;   </td></tr>
+<tr><td><a href='/profile.php?lookup=7658'> c3tf</a></td><td>5265&nbsp;&nbsp;&nbsp;   </td></tr>
+<tr><td><a href='/profile.php?lookup=6557'> letm</a></td><td>5245&nbsp;&nbsp;&nbsp;   </td></tr>
+<tr><td><a href='/profile.php?lookup=1338'> salim</a></td><td>5205&nbsp;&nbsp;&nbsp;   </td></tr>
+<tr><td><a href='/profile.php?lookup=4141'> ChinkInArmor</a></td><td>5115&nbsp;&nbsp;&nbsp;   </td></tr>
+<tr><td><a href='/profile.php?lookup=855'> Abhinav2107</a></td><td>5110&nbsp;&nbsp;&nbsp;   </td></tr>
+<tr><td><a href='/profile.php?lookup=4502'> Lax</a></td><td>5110&nbsp;&nbsp;&nbsp;   </td></tr>
+</table></div></div>
+</div>
+<table cellpadding='0' cellspacing='0' width='100%'>
+<tr><td class='csblock-L'></td><td class='csblock-C'>&nbsp;</td><td class='csblock-R'></td></tr></table>
+<br /></div>
+<div id='side-border-right'><div class='side-border'>
+<div class='side-caption'><table cellpadding='0' cellspacing='0' width='100%'>
+<tr><td class='osblock-L'></td><td class='osblock-C'>&nbsp;&nbsp;&nbsp;&nbsp;USERNAME</td><td class='osblock-R'></td></tr></table></div>
+<div class='side-body floatfix'>
+<div id ='userinfo'><div style='padding: 2px;'></div>
+<center>
+<i>Please <a href='/infusions/fusionboard4/usercp.php?section=avatar' title='Upload Avatar'>upload an avatar</a> to remove this message.</i><br /><br />
+<a href='../../../profile.php?lookup=5806' class='side'>View My Profile</a><br />
+<hr />
+You have <a href='../../../challenges/scoreboard.php' class='side'>3195</a> points.<br />
+You have <a href='../../../reputation/index.php?lookup=5806' class='side' style='color: #ccc'>0</a> reputation.<br />
+<hr />
+</center>
+&middot; <a href='../../../edit_profile.php' class='side'>Edit Profile</a><br />
+&middot; <a href='../../../messages.php' class='side'>Private Messages</a><br />
+&middot; <a href='../../../members.php' class='side'>Members List</a><br />
+&middot; <a href='../../../setuser.php?logout=yes' class='side'>Logout</a>
+<br />
+<div id='messagediv' style='text-align: center; text-shadow: #47B6FF 0.1em 0.2em 0.2em;'></div>
+<br />
+
+<div id='sound_notify' style=''></div>
+
+<script language='javascript' type='text/javascript'>
+
+function sound_notify(){
+  document.getElementById('sound_notify').innerHTML="<object height='1' width='1' id='audioplayer2' data='/mediaplayer/audioplayer.swf' type='application/x-shockwave-flash'><param value='audio/player.swf' name='movie'/><param value='playerID=2&amp;autostart=yes&amp;bg=0x444444&amp;leftbg=0x000000&amp;lefticon=0xFFFFFF&amp;rightbg=0x000000&amp;rightbghover=0x222222&amp;righticon=0xFFFFFF&amp;righticonhover=0x0080FF&amp;text=0xFFFFFF&amp;slider=0x0080FF&amp;track=0xFFFFFF&amp;border=0x0080FF&amp;loader=0x000000&amp;soundFile=/mediaplayer/ding.mp3' name='FlashVars'/><param value='high' name='quality'/><param value='true' name='menu'/><param value='transparent' name='wmode'/></object>";
+}
+
+var msg_return = '';
+
+var $m = jQuery.noConflict();
+var messageDivObject = $m('#messagediv');
+
+function checkObject(object, checker) {
+  var new_return = '';
+	$m.get('/infusions/user_info_panel/' + checker, function(data) {
+    new_return = data;
+    object.html(new_return);
+	});
+	
+  
+  /*
+   * For messages, a ring will sound if there is a new message.
+   */
+  if(checker == 'messagecheck.php'){
+    if (msg_return == '') {
+      msg_return = new_return;
+    }
+
+    
+    if (msg_return != new_return) {
+      sound_notify();
+      msg_return = new_return;
+    }
+  }
+  
+  setTimeout(function(){
+    checkObject(object, checker);
+  }, 10000);
+}
+
+checkObject(messageDivObject, 'message_check.php');
+
+function fadeBeginObject(object) {
+   object.fadeOut(0, function () {
+      fadeInObject(object);
+   });
+}
+
+fadeBeginObject(messageDivObject);
+
+function fadeOutObject(object) {
+   object.fadeOut(1500, function () {
+      fadeInObject(object);
+   });
+}
+
+function fadeInObject(object) {
+   object.fadeIn(1500, function () {
+    setTimeout(function(){
+      fadeOutObject(object);
+    },3000);
+   });
+}
+
+</script>
+
+
+</div></div>
+</div>
+<table cellpadding='0' cellspacing='0' width='100%'>
+<tr><td class='csblock-L'></td><td class='csblock-C'>&nbsp;</td><td class='csblock-R'></td></tr></table>
+<br /><div class='side-border'>
+<div class='side-caption'><table cellpadding='0' cellspacing='0' width='100%'>
+<tr><td class='osblock-L'></td><td class='osblock-C'>&nbsp;&nbsp;&nbsp;&nbsp;Users Online</td><td class='osblock-R'></td></tr></table></div>
+<div class='side-body floatfix'>
+<div id ='usersonlinepanel'>
+<br />
+<div id ='onlinediv'></div>
+
+<script language='javascript' type='text/javascript'>
+/*
+ * Written by: Qwexotic
+ * Edited by: Null Set (08 Aug 2012)
+ */
+function checkOnline() {
+
+  /*
+   * We cache the object so as to save on "selecting" resources. Since this
+   * code will be run multiple times, it will be well worth the little extra
+   * boost in efficiency. - Null Set
+   */
+  var currentObject = jQuery('#onlinediv');
+  jQuery.get('/infusions/online_users_panel/onlinecheck.php',function(data) {
+    if (currentObject.html().replace(/(<([^>]+)>)/ig,'') != data.replace(/(<([^>]+)>)/ig,'')) {
+        currentObject.fadeOut(1000, function () {
+          currentObject.html(data);
+          currentObject.fadeIn(1000);
+        });
+      }
+  });
+  setTimeout('checkOnline()', 10000);
+}
+
+checkOnline();
+
+</script>
+
+
+<br />&middot; Members on IRC: 42<br /><br />
+&middot; Bots Online: 0<br />
+<br />
+&middot; Total Members: 7,520<br />
+&middot; Newest Member: <a href='../../../profile.php?lookup=7845' class='side'>jaloo555</a>
+</div></div>
+</div>
+<table cellpadding='0' cellspacing='0' width='100%'>
+<tr><td class='csblock-L'></td><td class='csblock-C'>&nbsp;</td><td class='csblock-R'></td></tr></table>
+<br /><div class='side-border'>
+<div class='side-caption'><table cellpadding='0' cellspacing='0' width='100%'>
+<tr><td class='osblock-L'></td><td class='osblock-C'>&nbsp;&nbsp;&nbsp;&nbsp;Latest Articles</td><td class='osblock-R'></td></tr></table></div>
+<div class='side-body floatfix'>
+<div id ='latestarticlespanel'><table>
+<tr>
+<td class='tbl4'> <a href='../../../articles.php?article_id=132' title='[VIDEO] Into to Writing Exploits - Part 5b' class='side'>[VIDEO] Into to Writing Exploits - Part 5b</a><br /></td></tr>
+<tr>
+<td class='tbl4'> <a href='../../../articles.php?article_id=131' title='[VIDEO] Into to Writing Exploits - Part 5a' class='side'>[VIDEO] Into to Writing Exploits - Part 5a</a><br /></td></tr>
+<tr>
+<td class='tbl4'> <a href='../../../articles.php?article_id=130' title='[VIDEO] Into to Writing Exploits - Part 4' class='side'>[VIDEO] Into to Writing Exploits - Part 4</a><br /></td></tr>
+<tr>
+<td class='tbl4'> <a href='../../../articles.php?article_id=129' title='[VIDEO] Into to Writing Exploits - Part 3' class='side'>[VIDEO] Into to Writing Exploits - Part 3</a><br /></td></tr>
+<tr>
+<td class='tbl4'> <a href='../../../articles.php?article_id=128' title='[VIDEO] Into to Writing Exploits - Part 2b' class='side'>[VIDEO] Into to Writing Exploits - Part 2b</a><br /></td></tr>
+<tr>
+<td class='tbl4'> <a href='../../../articles.php?article_id=127' title='[VIDEO] Into to Writing Exploits - Part 2a' class='side'>[VIDEO] Into to Writing Exploits - Part 2a</a><br /></td></tr>
+<tr>
+<td class='tbl4'> <a href='../../../articles.php?article_id=126' title='[VIDEO] Into to Writing Exploits - Part 1' class='side'>[VIDEO] Into to Writing Exploits - Part 1</a><br /></td></tr>
+<tr>
+<td class='tbl4'> <a href='../../../articles.php?article_id=125' title='SQL Injection through INSERT' class='side'>SQL Injection through INSERT</a><br /></td></tr>
+<tr>
+<td class='tbl4'> <a href='../../../articles.php?article_id=124' title='[VIDEO]Alternate Data Streams' class='side'>[VIDEO]Alternate Data Streams</a><br /></td></tr>
+<tr>
+<td class='tbl4'> <a href='../../../articles.php?article_id=122' title='How To Hack Part 1' class='side'>How To Hack Part 1</a><br /></td></tr>
+<tr>
+<td class='tbl4'> <a href='../../../articles.php?article_id=121' title='Reaver 1.3' class='side'>Reaver 1.3</a><br /></td></tr>
+<tr>
+<td class='tbl4'> <a href='../../../articles.php?article_id=120' title='Three Forwarding Proxies' class='side'>Three Forwarding Proxies</a><br /></td></tr>
+<tr>
+<td class='tbl4'> <a href='../../../articles.php?article_id=119' title='DNS Server Auditing [video]' class='side'>DNS Server Auditing [video]</a><br /></td></tr>
+<tr>
+<td class='tbl4'> <a href='../../../articles.php?article_id=118' title='JTR - Tweak That Attack!' class='side'>JTR - Tweak That Attack!</a><br /></td></tr>
+<tr>
+<td class='tbl4'> <a href='../../../articles.php?article_id=117' title='Breaking The Crypt - Advanced Hash Cracking' class='side'>Breaking The Crypt - Advanced Hash Cracking</a><br /></td></tr>
+</table></div></div>
+</div>
+<table cellpadding='0' cellspacing='0' width='100%'>
+<tr><td class='csblock-L'></td><td class='csblock-C'>&nbsp;</td><td class='csblock-R'></td></tr></table>
+<br /><div class='side-border'>
+<div class='side-caption'><table cellpadding='0' cellspacing='0' width='100%'>
+<tr><td class='osblock-L'></td><td class='osblock-C'>&nbsp;&nbsp;&nbsp;&nbsp;Latest Codebank</td><td class='osblock-R'></td></tr></table></div>
+<div class='side-body floatfix'>
+<div id ='latestcodebank'><table>
+<tr>
+<td class='tbl4'> <a href='../../../codebank.php?codebank_id=153' title='key logger for linux' class='side'>key logger for linux</a><br /></td></tr>
+<tr>
+<td class='tbl4'> <a href='../../../codebank.php?codebank_id=149' title='Exploit SQLi xpath' class='side'>Exploit SQLi xpath</a><br /></td></tr>
+<tr>
+<td class='tbl4'> <a href='../../../codebank.php?codebank_id=148' title='Hidden PHP Shell( Call by user agent)' class='side'>Hidden PHP Shell( Call by user agent)</a><br /></td></tr>
+<tr>
+<td class='tbl4'> <a href='../../../codebank.php?codebank_id=147' title='mitm_inject.py | Fun for the whole LAN!!' class='side'>mitm_inject.py | Fun for the whole LAN!!</a><br /></td></tr>
+<tr>
+<td class='tbl4'> <a href='../../../codebank.php?codebank_id=146' title='|Middleman.py| Easy SSL MiTM script by nullbyt3' class='side'>|Middleman.py| Easy SSL MiTM script by nullbyt3</a><br /></td></tr>
+<tr>
+<td class='tbl4'> <a href='../../../codebank.php?codebank_id=145' title='connlog.bat' class='side'>connlog.bat</a><br /></td></tr>
+<tr>
+<td class='tbl4'> <a href='../../../codebank.php?codebank_id=144' title='SMS bomber in j2me' class='side'>SMS bomber in j2me</a><br /></td></tr>
+<tr>
+<td class='tbl4'> <a href='../../../codebank.php?codebank_id=143' title='Crazy python trick in commend prompt ' class='side'>Crazy python trick in commend prompt </a><br /></td></tr>
+<tr>
+<td class='tbl4'> <a href='../../../codebank.php?codebank_id=142' title='Basic  HTTP Server' class='side'>Basic  HTTP Server</a><br /></td></tr>
+<tr>
+<td class='tbl4'> <a href='../../../codebank.php?codebank_id=141' title='LFI_Exploit.py :  eXtreme LFI Fuzzer/Exploiter/Shell/Everything' class='side'>LFI_Exploit.py :  eXtreme LFI Fuzzer/Exploiter/Shell/Everything</a><br /></td></tr>
+<tr>
+<td class='tbl4'> <a href='../../../codebank.php?codebank_id=140' title='Multiprocess Bruteforcer' class='side'>Multiprocess Bruteforcer</a><br /></td></tr>
+<tr>
+<td class='tbl4'> <a href='../../../codebank.php?codebank_id=139' title='facebook bot ' class='side'>facebook bot </a><br /></td></tr>
+<tr>
+<td class='tbl4'> <a href='../../../codebank.php?codebank_id=138' title='Wordpress Threaded Bruteforcer' class='side'>Wordpress Threaded Bruteforcer</a><br /></td></tr>
+<tr>
+<td class='tbl4'> <a href='../../../codebank.php?codebank_id=137' title='simple game for windows using python' class='side'>simple game for windows using python</a><br /></td></tr>
+<tr>
+<td class='tbl4'> <a href='../../../codebank.php?codebank_id=136' title='Body Mass Index Calculator' class='side'>Body Mass Index Calculator</a><br /></td></tr>
+</table></div></div>
+</div>
+<table cellpadding='0' cellspacing='0' width='100%'>
+<tr><td class='csblock-L'></td><td class='csblock-C'>&nbsp;</td><td class='csblock-R'></td></tr></table>
+<br />
+<div class='side-border'>
+<div class='side-caption'><table cellpadding='0' cellspacing='0' width='100%'>
+<tr><td class='osblock-L'></td><td class='osblock-C'>&nbsp;&nbsp;&nbsp;&nbsp;Downloads</td><td class='osblock-R'></td></tr></table></div>
+<div class='side-body floatfix'>
+<div id='prodownld'>
+<p>
+	New Downloads
+</p>
+<table width="100%" cellspacing="0" cellpadding="0" border="0">
+<tbody>
+<tr>
+	<td>&middot; <a href="../../../infusions/pro_download_panel/download.php?did=82" title="A Serious Newbies Guide to the Underground V2">A Serious Newbies Guide to the Underground V2</a></td>
+</tr>
+<tr>
+	<td>&middot; <a href="../../../infusions/pro_download_panel/download.php?did=81" title="Java college notes">Java college notes</a></td>
+</tr>
+<tr>
+	<td>&middot; <a href="../../../infusions/pro_download_panel/download.php?did=79" title="Unix Tutorials">Unix Tutorials</a></td>
+</tr>
+<tr>
+	<td>&middot; <a href="../../../infusions/pro_download_panel/download.php?did=70" title="Google Captcha Wordlist">Google Captcha Wordlist</a></td>
+</tr>
+<tr>
+	<td>&middot; <a href="../../../infusions/pro_download_panel/download.php?did=66" title="Madf0x&#39;s Common Password List">Madf0x&#39;s Common Password List</a></td>
+</tr>
+</tbody>
+</table>
+<p>
+Top 5 Downloads
+</p>
+
+<table width="100%" cellspacing="0" cellpadding="0" border="0">
+<tbody>
+<tr>
+	<td>&middot; <a href="../../../infusions/pro_download_panel/download.php?did=40" title="Google Secrets">Google Secrets</a></td>
+	<td align="right">[7081]</td>
+</tr>
+<tr>
+	<td>&middot; <a href="../../../infusions/pro_download_panel/download.php?did=33" title="Vulnerable Web Environment">Vulnerable Web Environment</a></td>
+	<td align="right">[4801]</td>
+</tr>
+<tr>
+	<td>&middot; <a href="../../../infusions/pro_download_panel/download.php?did=24" title="user2sid and sid2user">user2sid and sid2user</a></td>
+	<td align="right">[4286]</td>
+</tr>
+<tr>
+	<td>&middot; <a href="../../../infusions/pro_download_panel/download.php?did=70" title="Google Captcha Wordlist">Google Captcha Wordlist</a></td>
+	<td align="right">[4055]</td>
+</tr>
+<tr>
+	<td>&middot; <a href="../../../infusions/pro_download_panel/download.php?did=21" title="xss.pdf">xss.pdf</a></td>
+	<td align="right">[3750]</td>
+</tr>
+</tbody>
+</table></div></div>
+</div>
+<table cellpadding='0' cellspacing='0' width='100%'>
+<tr><td class='csblock-L'></td><td class='csblock-C'>&nbsp;</td><td class='csblock-R'></td></tr></table>
+<br /><div class='side-border'>
+<div class='side-caption'><table cellpadding='0' cellspacing='0' width='100%'>
+<tr><td class='osblock-L'></td><td class='osblock-C'>&nbsp;&nbsp;&nbsp;&nbsp;Top 10 Forum Posters</td><td class='osblock-R'></td></tr></table></div>
+<div class='side-body floatfix'>
+<div id="forumscoreboard"><table width='170'><th>User</th><th>Posts</th><tr><td><a href='/profile.php?lookup=6'> bluechill</a></td><td>1430&nbsp;&nbsp;&nbsp;   </td></tr>
+<tr><td><a href='/profile.php?lookup=39'> madf0x</a></td><td>1234&nbsp;&nbsp;&nbsp;   </td></tr>
+<tr><td><a href='/profile.php?lookup=104'> cruizrisner</a></td><td>1063&nbsp;&nbsp;&nbsp;   </td></tr>
+<tr><td><a href='/profile.php?lookup=2'> Qwexotic</a></td><td>1003&nbsp;&nbsp;&nbsp;   </td></tr>
+<tr><td><a href='/profile.php?lookup=1041'> Null Set</a></td><td>825&nbsp;&nbsp;&nbsp;   </td></tr>
+<tr><td><a href='/profile.php?lookup=618'> auditorsec</a></td><td>604&nbsp;&nbsp;&nbsp;   </td></tr>
+<tr><td><a href='/profile.php?lookup=1499'> godofcereal</a></td><td>604&nbsp;&nbsp;&nbsp;   </td></tr>
+<tr><td><a href='/profile.php?lookup=1151'> TurboBorland</a></td><td>587&nbsp;&nbsp;&nbsp;   </td></tr>
+<tr><td><a href='/profile.php?lookup=3'> Stormc1nd3r</a></td><td>403&nbsp;&nbsp;&nbsp;   </td></tr>
+<tr><td><a href='/profile.php?lookup=2135'> PublicEnemy</a></td><td>385&nbsp;&nbsp;&nbsp;   </td></tr>
+</table></div></div>
+</div>
+<table cellpadding='0' cellspacing='0' width='100%'>
+<tr><td class='csblock-L'></td><td class='csblock-C'>&nbsp;</td><td class='csblock-R'></td></tr></table>
+<br /><div class='side-border'>
+<div class='side-caption'><table cellpadding='0' cellspacing='0' width='100%'>
+<tr><td class='osblock-L'></td><td class='osblock-C'>&nbsp;&nbsp;&nbsp;&nbsp;Affiliates</td><td class='osblock-R'></td></tr></table></div>
+<div class='side-body floatfix'>
+<div id='affiliates'><center>
+<br /><a href='http://evilzone.org' title='Evilzone' target='_blank'><img src='/images/affiliates/evilzone.png'></a><br />
+<br /></center>
+<center>
+<a href='http://www.infinityexists.com' title='Infinity Exists' target='_blank'>Infinity Exists</a><br />
+<br /><a href='http://iexploit.org' target='_blank'><img src='/images/affiliates/iexploit.jpg' style='width:88px;height:31px' alt='iExploit'/></a><br />
+<br /><a href='http://wechall.net' title='WeChall' target='_blank'><img src='/images/affiliates/wechall.jpg' style='width:88px;height:31px' alt='WeChall'/></a><br /><br />
+<a href='http://programisiai.lt' target='_blank'><img src='/images/affiliates/programisai.png' /></a><br />
+<br /><a href='http://www.thisislegal.com/' alt='Thisislegal.com'><img src='/images/affiliates/thisislegal.gif' title='Thisislegal.com' alt='Thisislegal.com' border='0' /></a><br /></center>
+</div></div>
+</div>
+<table cellpadding='0' cellspacing='0' width='100%'>
+<tr><td class='csblock-L'></td><td class='csblock-C'>&nbsp;</td><td class='csblock-R'></td></tr></table>
+<br /></div>
+<div id='main-content'><div id='main-container'><a id='content' name='content'></a>
+<div class='main-border'>
+<div class='main-caption'><table cellpadding='0' cellspacing='0' width='100%'>
+<tr><td class='otblock-L'></td><td class='otblock-C'><center>Decryption Level 8</center></td><td class='otblock-R'></td></tr></table><table cellpadding='0' cellspacing='0' width='100%'>
+<tr><td class='headerotblock'>&nbsp;</td></tr></table></div>
+<div class='main-body'>
+<center>
+<!-- The KeyPhrase that this encryption method uses is something that you'll have when you figure it out. -->
+<b>Your encrypted string using 'XOREncryption + BASE64' is:</b><br /><br />
+MDVXNChSKTBSMDVX
+<br /><br />
+<a href='index.php' title='Decryption 8'>Go back to the decryption challenge 8 page.</a><br />
+</center>
+</div>
+<table cellpadding='0' cellspacing='0' width='100%'>
+<tr><td class='footerctblock'>&nbsp;</td></tr></table><table cellpadding='0' cellspacing='0' width='100%'>
+<tr><td class='ctblock-L'></td><td class='ctblock-C'>&nbsp;</td><td class='ctblock-R'></td></tr></table></div>
+</div></div>
+</div>
+<div class='clear'></div>
+<div id='footer'>
+<div class='warningmsg' style='width:100%'>
+<br /><br /><img src='/themes/SO Old/images/footertxt.png' usemap='#footermap' alt='' />
+<map name='footermap'><area shape='rect' coords='360,8,580,20' href='/print.php?type=T' alt='Terms' /></map></div>
+<div class='clear'><br /></div>
+<div class='flleft' style='width:auto'>Render time: 0.13 seconds</div>
+<div class='flright' style='text-align:right;width:auto'><!--counter-->5,893,421 unique visits</div>
+<div class='clear'></div>
+</div></div>
+<style type='text/css'>
+
+* {margin: 0; padding: 0; outline: none;}
+img {border: none;}
+h1 {
+	font-size: 1.2em;
+	padding: 5px 10px;
+	color: #ccc;
+	width: 940px;
+	margin: 0 auto;
+}
+h1 a {	color: #fff; }
+h1 span {font-weight: normal;}
+
+#footpanel {
+
+	z-index:1000;
+	position:fixed;
+	bottom: 0px;
+	top:auto;
+	display: block;
+	height: 25px;
+	left: 1px;
+	right: 1px;
+	background-image: url(/chat/css/images/bgrepeat.png);
+	border-left: 1px solid #000;
+	border-right: 1px solid #000;
+	font-family:'Lucida Grande',Verdana,Arial,'Bitstream Vera Sans',sans-serif;
+	font-size:11px;
+	text-align:left;
+}
+
+*html #footpanel { /*--IE6 Hack - Fixed Positioning to the Bottom--*/
+	margin-top: -1px; /*--prevents IE6 from having an infinity scroll bar - due to 1px border on #footpanel--*/
+	position: absolute;
+	top:expression(eval(document.compatMode &&document.compatMode=='CSS1Compat') ?documentElement.scrollTop+(documentElement.clientHeight-this.clientHeight) : document.body.scrollTop +(document.body.clientHeight-this.clientHeight));
+}
+
+#footpanel ul {
+	padding: 0; margin: 0;
+	float: left;
+	width: 100%;
+	list-style: none;
+	border-top: 1px solid #000; /*--Gives the bevel feel on the panel--*/
+	font-size: 1.1em;
+}
+#footpanel ul li{
+	padding: 0; margin: 0;
+	float: left;
+	position: relative;
+}
+#footpanel ul li a{
+	padding: 5px;
+	float: left;
+	text-indent: -9999px;
+	height: 16px; width: 16px;
+	text-decoration: none;
+	color: #eeffff;
+	position: relative;
+	font-size: 10px;
+	border-right: 1px #555 solid;
+}
+html #footpanel ul li a:hover{	background-color: #333; }
+html #footpanel ul li a.active { /*--Active state when subpanel is open--*/
+	background-color: #222;
+	height: 17px;
+	margin-top: -1px; /*--Push it up 2px to attach the active button to subpanel--*/
+	border: 1px solid #333;
+	border-top: 1px solid #000;
+	z-index: 200; /*--Keeps the active area on top of the subpanel--*/
+	position: relative;
+}
+
+
+#footpanel a.home{	
+	background: url(home.png) no-repeat 15px center;
+	width: 100px;
+	border-right: 1px solid #bbb;
+	text-indent: 0; /*--Reset text indent--*/
+	text-align: center;
+}
+a.profile{	background: url(/chat/css/images/icons/user.png) no-repeat center center;  }
+a.contact{	background: url(/chat/css/images/icons/contact.png) no-repeat center center; }
+a.ircchat{	background: url(/chat/css/images/icons/ircchat.png) no-repeat center center; }
+a.messages{	background: url(/chat/css/images/icons/mail.png) no-repeat center center; }
+a.toggle{	background: url(/challenges/images/greenled.png) no-repeat center center; }
+a.editprofile{	background: url(/chat/css/images/icons/wrench_screwdriver.png) no-repeat center center; }
+#footpanel a.chat{	
+	background: url(/chat/css/images/icons/balloon.png) no-repeat 15px center;
+	width: 126px;
+	border-left: 1px solid #555;
+	border-right: 1px solid #555;
+	padding-left: 40px;
+	text-indent: 0; /*--Reset text indent--*/
+}
+a.alerts{	background: url(/chat/css/images/icons/newspaper.png) no-repeat center center;	 }
+
+#footpanel li#chatpanel, #footpanel li#alertpanel {	float: right; }  /*--Right align the chat and alert panels--*/
+
+#footpanel a small {  /*--panel tool tip styles--*/
+	text-align: center;
+	width: 70px;
+	background: url(/chat/css/images/icons/pop_arrow.gif) no-repeat center bottom;
+	padding: 5px 5px 11px;
+	display: none; /*--Hide by default--*/
+	color: #fff;
+	font-size: 1em;
+	text-indent: 0;
+}
+#footpanel a:hover small{
+	display: block; /*--Show on hover--*/
+	position: absolute;
+	top: -35px; /*--Position tooltip 35px above the list item--*/
+	left: 50%; 
+	margin-left: -40px; /*--Center the tooltip--*/
+	z-index: 9999;
+}
+
+#footpanel ul li div a { /*--Reset link style for subpanel links--*/
+	text-indent: 0;
+	width: auto;
+	height: auto;
+	padding: 0;
+	float: none;
+	color: #00629a;
+	position: static;
+}
+#footpanel ul li div a:hover {	text-decoration: underline; } /*--Reset link style for subpanel links--*/
+
+#footpanel .subpanel {
+	position: absolute;
+	left: 0; bottom: 27px;
+	display: none;	/*--Hide by default--*/
+	width: 198px;
+	border: 1px solid #555;
+	background: #fff;
+	overflow: hidden;
+	padding-bottom: 2px;
+}
+#footpanel h3 {
+	background: url(/themes/Asperon/images/menu.png);
+	padding: 2px 10px;
+	color: #fff;
+	font-size: 12px;
+	cursor: pointer;
+}
+#footpanel h3 span { 
+	font-size: 1.5em;
+	float: right;
+	line-height: 0.6em;	
+	font-weight: normal;
+}
+#footpanel .subpanel ul{
+	padding: 0; margin: 0;
+	background: #333;
+	width: 100%;
+	overflow: auto;
+}
+#footpanel .subpanel li{ 
+	float: none; /*--Reset float--*/
+	display: block;
+	padding: 0; margin: 0;
+	overflow: hidden;
+	clear: both;
+	position: static;  /*--Reset relative positioning--*/
+	font-size: 11px;
+}
+
+#chatpanel .subpanel li { background: url(dash.gif) repeat-x left center; } 
+#chatpanel .subpanel li span {
+	padding: 5px;
+	color: #777;
+	float: left;
+	font-size: 11px;
+}
+#chatpanel .subpanel li a img {
+	float: left;
+	margin: 0 5px;
+}
+#chatpanel .subpanel li a{
+	padding: 1px 0;	margin: 0;
+	line-height: 22px;
+	height: 20px;
+	background: #111;
+	display: block;
+}
+#chatpanel .subpanel li a:hover {
+	background: url(/themes/Asperon/images/menu.png) center 20%;
+	color: #fff;
+	text-decoration: none;
+}
+
+
+#alertpanel .subpanel { right: 0; left: auto; /*--Reset left positioning and make it right positioned--*/ }
+#alertpanel .subpanel li {
+	border-top: 1px solid #f0f0f0;
+	display: block;
+	color: #eeffff;
+}
+#alertpanel .subpanel li p {padding: 5px 10px;}
+#alertpanel .subpanel li a.delete{
+	background: url(delete_x.gif) no-repeat;
+	float: right;
+	width: 13px; height: 14px;
+	margin: 5px;
+	text-indent: -9999px;
+	visibility: hidden; /*--Hides by default but still takes up space (not completely gone like display:none;)--*/
+}
+#alertpanel .subpanel li a.delete:hover { background-position: left bottom; }
+#footpanel #alertpanel li.view {
+	text-align: right;
+	padding: 5px 10px 5px 0;
+}
+
+</style>
+<script type='text/javascript' src='/chat/js/chat.js'></script>
+<script type='text/javascript'>
+var $chat = jQuery.noConflict();$chat(document).ready(function(){
+	//Adjust panel height
+	$chat.fn.adjustPanel = function(){
+		$chat(this).find('ul, .subpanel').css({ 'height' : 'auto'}); //Reset subpanel and ul height
+		var windowHeight = $chat(window).height(); //Get the height of the browser viewport
+		var panelsub = $chat(this).find('.subpanel').height(); //Get the height of subpanel
+		var panelAdjust = windowHeight - 100; //Viewport height - 100px (Sets max height of subpanel)
+		var ulAdjust =  panelAdjust - 25; //Calculate ul size after adjusting sub-panel (27px is the height of the base panel)
+		if ( panelsub >= panelAdjust ) {	 //If subpanel is taller than max height...
+			$chat(this).find('.subpanel').css({ 'height' : panelAdjust }); //Adjust subpanel to max height
+			$chat(this).find('ul').css({ 'height' : ulAdjust}); //Adjust subpanel ul to new size
+		}
+		else if ( panelsub < panelAdjust ) { //If subpanel is smaller than max height...
+			$chat(this).find('ul').css({ 'height' : 'auto'}); //Set subpanel ul to auto (default size)
+		}
+	};
+	//Execute function on load
+	$chat('#chatpanel').adjustPanel(); //Run the adjustPanel function on #chatpanel
+	$chat('#alertpanel').adjustPanel(); //Run the adjustPanel function on #alertpanel
+	//Each time the viewport is adjusted/resized, execute the function
+	$chat(window).resize(function () {
+		$chat('#chatpanel').adjustPanel();
+		$chat('#alertpanel').adjustPanel();
+	});
+	//Click event on Chat Panel + Alert Panel
+	$chat('#chatpanel a:first, #alertpanel a:first').click(function() { //If clicked on the first link of #chatpanel and #alertpanel...
+		if($chat(this).next('.subpanel').is(':visible')){ //If subpanel is already active...
+			$chat(this).next('.subpanel').hide(); //Hide active subpanel
+			$chat('#footpanel li a').removeClass('active'); //Remove active class on the subpanel trigger
+		}
+		else { //if subpanel is not active...
+			$chat('.subpanel').hide(); //Hide all subpanels
+			$chat(this).next('.subpanel').toggle(); //Toggle the subpanel to make active
+			$chat('#footpanel li a').removeClass('active'); //Remove active class on all subpanel trigger
+			$chat(this).toggleClass('active'); //Toggle the active class on the subpanel trigger
+		}
+		return false; //Prevent browser jump to link anchor
+	});
+	//Click event outside of subpanel
+	$chat(document).click(function() { //Click anywhere and...
+		$chat('.subpanel').hide(); //hide subpanel
+		$chat('#footpanel li a').removeClass('active'); //remove active class on subpanel trigger
+	});
+	$chat('.subpanel ul').click(function(e) {
+		e.stopPropagation(); //Prevents the subpanel ul from closing on click
+	});
+	//Delete icons on Alert Panel
+	$chat('#alertpanel li').hover(function() {
+		$chat(this).find('a.delete').css({'visibility': 'visible'}); //Show delete icon on hover
+	},function() {
+		$chat(this).find('a.delete').css({'visibility': 'hidden'}); //Hide delete icon on hover out
+	});
+});
+</script>
+<div id='footpanel'>
+	<ul id='mainpanel'>
+	  <li><a href='/' class='home'>SecurityOverride <small>Homepage</small></a></li>
+	  <li><a href='/profile.php?lookup=5806' class='profile'>View Profile <small>View Profile</small></a></li>
+	  <li><a href='/edit_profile.php' class='editprofile'>Edit Profile <small>Edit Profile</small></a></li>
+	  <li><a href='/irc' class='ircchat'>IRC Chat <small>IRC Chat</small></a></li>
+	  <li><a href='/messages.php' class='messages'>Messages <small>Messages</small></a></li>
+	  <li><a href='/contact.php' class='contact'>Contact Us <small>Contact Us</small></a></li>
+	  <li><a href='/themes/templates/togglechat.php?set=0' class='toggle'>Turn Chat Off <small>Turn Chat Off</small></a></li>
+	  <li id='alertpanel'>
+	  	<a href='#' class='alerts'>Alerts</a>
+		<div class='subpanel'>
+		<h3><span> &ndash; </span>Notifications</h3>
+		<ul>
+		<li><p style='text-align: center;'><a href='/news.php?readmore=69' title='New Moderators' style='color: #eee;'>New Moderators</a></p></li>
+		<li><p style='text-align: center;'><a href='/news.php?readmore=68' title='Domain Frenzy' style='color: #eee;'>Domain Frenzy</a></p></li>
+		<li><p style='text-align: center;'><a href='/news.php?readmore=67' title='We Got Our COM Back ' style='color: #eee;'>We Got Our COM Back </a></p></li>
+		<li><p style='text-align: center;'><a href='/news.php?readmore=66' title='Forensics Challenge 10' style='color: #eee;'>Forensics Challenge 10</a></p></li>
+		<li><p style='text-align: center;'><a href='/news.php?readmore=65' title='New Steganography Challenge' style='color: #eee;'>New Steganography Challenge</a></p></li>
+		</ul>
+		</div>
+	  </li>
+	  <li id='chatpanel'>
+	  	<a href='#' onclick='checkOnlineChat();' class='chat'>Online Users (<strong>1</strong>) </a>
+		<div class='subpanel' style='background: #999;'>
+		<div id='chatonline'>
+
+</div>
+		</ul>
+		</div>
+	  </li>
+	</ul>
+</div>
+<script language='javascript' type='text/javascript'>
+
+function checkOnlineChat() {
+
+  var $chato = jQuery.noConflict();
+  var chatObject = $chato('#chatonline');
+
+  $chato.get('/chat/onlinecheck.php', function(data) {
+    if (chatObject.html().replace(/(<([^>]+)>)/ig,'') != data.replace(/(<([^>]+)>)/ig,'')) {
+      chatObject.fadeOut(200, function () {
+      chatObject.html(data).fadeIn(200);
+      });
+    }
+  });
+  
+  setTimeout('checkOnlineChat()', 15000);
+}
+
+checkOnlineChat();
+
+</script>
+
+<script type="text/javascript">var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));</script><script type="text/javascript">try {var pageTracker = _gat._getTracker("UA-6865068-2");pageTracker._trackPageview();} catch(err) {}</script>
+</body>
+</html>
+

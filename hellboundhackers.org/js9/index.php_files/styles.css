@@ -1,0 +1,405 @@
+body {
+color:#ccc;
+background-color:#000;
+font-family:Verdana,Tahoma,Arial,Sans-Serif;
+font-size:10px;
+margin:0;
+}
+
+a {
+color:#dc8;
+text-decoration:none;
+}
+
+a:hover {
+color:#dc8;
+text-decoration:underline;
+}
+
+a.side {
+color:#fda;
+text-decoration:none;
+}
+
+a:hover.side {
+color:#fda;
+text-decoration:underline;
+}
+
+a.white {
+color:#ddd;
+text-decoration:none;
+}
+
+a:hover.white {
+color:#333;
+text-decoration:underline;
+}
+
+.ExclusiveMember {
+color:orange;
+}
+
+form {
+margin:0;
+}
+
+hr {
+height:2px;
+border-top:#081f1c 1px solid;
+border-bottom:#485f5c 1px solid;
+}
+
+hr.side-hr {
+height:2px;
+border-top:#283f3c 1px solid;
+border-bottom:#687f7c 1px solid;
+}
+
+td {
+font-family:Verdana,Tahoma,Arial,Sans-Serif;
+font-size:10px;
+}
+
+a
+pre {
+font-family:Verdana,Tahoma,Arial,Sans-Serif;
+font-size:9px;
+}
+
+.alt {
+color:#aaa;
+}
+
+#top-bar {
+background:#283F3C;
+border-bottom:#586f6c 1px solid;
+float:left;
+width:100%;
+display:inline;
+}
+
+.top-bar-left {
+float:left;
+font-size:10px;
+text-align:center;
+}
+
+.top-bar-right {
+padding-right:15px;
+float:right;
+font:10px;
+text-align:center;
+}
+
+.top-bar-left li,.top-bar-right li {
+display:inline;
+}
+
+.top-bar-left li a,.top-bar-right li a {
+float:left;
+color:#dc8;
+text-align:center;
+padding:3px 5px;
+}
+
+.top-bar-left li a:hover,.top-bar-right li a:hover {
+text-decoration:underline;
+}
+
+.white-header {
+font-family:Verdana,Tahoma,Arial,Sans-Serif;
+font-size:10px;
+color:#ccc;
+background-color:#283f3c;
+border-top:#586f6c 1px solid;
+border-bottom:#586f6c 1px solid;
+padding:4px;
+}
+
+.full-header {
+font-family:Verdana,Tahoma,Arial,Sans-Serif;
+font-size:10px;
+color:#fff;
+background-color:#485f5c;
+width:100%;
+}
+
+.button {
+font-family:Tahoma,Arial,Verdana,Sans-Serif;
+font-size:10px;
+color:#000;
+background-color:#687f7c;
+height:19px;
+background-image:url(images/button.gif);
+background-repeat:repeat-x;
+border:1px #687f7c solid;
+margin-top:2px;
+}
+
+.pstrength-minchar {
+font-size:10px;
+}
+
+.main-body {
+font-size:11px;
+color:#ccc;
+background-color:#283f3c;
+padding:3px 4px;
+}
+
+.side-body {
+font-size:10px;
+color:#fff;
+padding:4px 4px 6px;
+}
+
+.main-bg {
+background-color:#081f1c;
+padding:10px;
+}
+
+.border {
+border-color:#485f5c;
+border-style:solid;
+border-width:0 1px 1px;
+}
+
+.side-border-left {
+background-color:#485f5c;
+border-color:#3c3c3c;
+border-style:solid;
+border-width:0 1px 0 0;
+}
+
+.side-border-right {
+background-color:#485f5c;
+border-color:#3c3c3c;
+border-style:solid;
+border-width:0 0 0 1px;
+}
+
+.news-footer {
+font-size:9px;
+color:#ccc;
+background-color:#182f2c;
+padding:2px;
+}
+
+.barmain {
+font-family:Verdana,Tahoma,Arial,Sans-Serif;
+font-size:10px;
+font-weight:700;
+color:#ddd;
+height:20px;
+background-image:url(images/barmain.gif);
+background-repeat:repeat-x;
+padding:0 2px 2px;
+}
+
+.barleft {
+width:2px;
+height:20px;
+background-image:url(images/barleft.gif);
+}
+
+.barright {
+width:2px;
+height:20px;
+background-image:url(images/barright.gif);
+}
+
+.capmain {
+font-family:Verdana,Tahoma,Arial,Sans-Serif;
+font-size:10px;
+font-weight:700;
+color:#ddd;
+height:20px;
+background-image:url(images/capmain.gif);
+background-repeat:repeat;
+padding:5px 2px 2px 5px;
+}
+
+.capleft {
+width:2px;
+height:20px;
+background-image:url(images/capleft.gif);
+}
+
+.capright {
+width:2px;
+height:20px;
+background-image:url(images/capright.gif);
+}
+
+.scapmain {
+font-family:Verdana,Tahoma,Arial,Sans-Serif;
+font-size:10px;
+font-weight:700;
+color:#000;
+height:19px;
+background-image:url(images/scapmain.gif);
+background-repeat:repeat-x;
+border-color:#283f3c #000;
+border-style:solid;
+border-width:1px 0;
+padding:0 2px;
+}
+
+.tbl-border {
+background-color:#384f4c;
+}
+
+.tbl {
+font-size:11px;
+padding:3px 4px;
+}
+
+.tbl1 {
+font-size:11px;
+color:#ccc;
+background-color:#283f3c;
+padding:4px;
+}
+
+.tbl2 {
+font-size:11px;
+color:#ccc;
+background-color:#182f2c;
+padding:4px;
+}
+
+.forum-caption {
+font-size:10px;
+font-weight:700;
+color:#ddd;
+background-color:#283f3c;
+height:20px;
+background-image:url(images/capmain.gif);
+background-repeat:repeat-x;
+padding:0 4px 2px;
+}
+
+.quote {
+color:#ccc;
+background-color:#182f2c;
+border:1px #284f4c solid;
+margin:0 20px;
+padding:2px;
+}
+
+.poll {
+height:12px;
+border:1px #000 solid;
+}
+
+.comment-name {
+font-weight:700;
+color:#dc8;
+}
+
+.shoutboxname {
+font-weight:700;
+color:#fda;
+}
+
+.shoutboxdate {
+font-size:9px;
+color:#aaa;
+}
+
+.admin {
+font-weight:700;
+color:#FFF;
+}
+
+.small {
+font-size:9px;
+font-weight:400;
+}
+
+.small2 {
+font-size:9px;
+font-weight:400;
+color:#aaa;
+}
+
+.side-small {
+font-size:10px;
+font-weight:400;
+color:#fff;
+}
+
+.side-label {
+background-color:#384f4c;
+padding:2px;
+}
+
+.news_title {
+font-size:11px;
+position:relative;
+top:-5px;
+z-index:1;
+line-height:0;
+padding:5px;
+}
+
+.news_capmain {
+font-family:Verdana,Tahoma,Arial,Sans-Serif;
+color:#ddd;
+height:20px;
+background-image:url(images/capmain.gif);
+background-repeat:repeat;
+width:100%;
+overflow:hidden;
+text-align:left;
+vertical-align:top;
+padding:1px 1px 0;
+}
+
+.time {
+font-family:Verdana,Tahoma,Arial,Sans-Serif;
+font-size:10px;
+color:#ccc;
+position:absolute;
+right:10px;
+top:100px;
+padding:4px;
+}
+
+.open_table {
+width:100%;
+border:1px solid #586f6c;
+}
+
+.navlink {
+padding-left:7px;
+background-image:url('/fusion_themes/HBH/images/bullet.gif');
+background-repeat:no-repeat;
+background-position:center left;
+line-height:12px;
+}
+
+ul {
+list-style:none;
+margin:1px 0 1px 10px;
+padding:0;
+}
+
+.articlelink {
+font-size:10px;
+width:150px;
+overflow:hidden;
+}
+
+.body,.shoutbox {
+color:#ccc;
+}
+
+.textbox,.password {
+font-family:Verdana,Tahoma,Arial,Sans-Serif;
+font-size:10px;
+color:#ccc;
+background-color:#081f1c;
+border:1px #687f7c solid;
+}

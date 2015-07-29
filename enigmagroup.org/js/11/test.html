@@ -1,0 +1,27 @@
+<html>
+	<head>
+		<title>EG - JS10</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+		function checkPass( password ) {
+			var total = 0 ;
+			var charlist = "abcdefghijklmnopqrstuvwxyz";
+			for(var i = 0; i < password.length; i++) {
+				var countone = password.charAt (i);
+				var counttwo = (charlist.indexOf(countone)) ;
+				counttwo++;
+				total *= 17;
+				total += counttwo;
+			}
+			if (total == 248410397744610){
+			setTimeout ("location.replace('index.php?password="+password+ "'  )  ;  "  ,  0   )   }   else  {  alert  (
+"Sorry, but the password was incorrect." ) ; } }
+</script><form name="login" id="login" action=""
+method="post" onsubmit="checkPass(login.password
+.value)">   <table cellspacing="2"><tr><td>Passw
+ord:</td><td><input id="password" name="password
+" value="" size="30" maxlength="30" /></td></tr>
+</table></form><br /><br /><br /><br /><br /><br
+	</body>
+</html>

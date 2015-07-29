@@ -1,0 +1,5 @@
+CSRF in Feedback area
+<img src="http://securityoverride.org/challenges/realistic/3/checkout.php?id=53&checked_out=no">
+
+Cookie as discount indicator
+void(document.cookie="discount=200")

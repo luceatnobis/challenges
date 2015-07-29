@@ -1,0 +1,82 @@
+V "GNAT Lib v4.4"
+M P W=b
+P SS ZX
+R nnnnnnnnnnnnnnnvnnvnvvvnnnnnvnnnnnnnnnnnnvnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn
+
+U testran%b		testran.adb		3f786465 NE OO SU
+W ada%s			ada.ads			ada.ali
+W ada.exceptions%s	a-except.adb		a-except.ali
+W ada.tags%s		a-tags.adb		a-tags.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+W ada.text_io.float_aux%s  a-tiflau.adb		a-tiflau.ali
+W ada.text_io.integer_aux%s  a-tiinau.adb	a-tiinau.ali
+W calendar%s		calendar.ads		calendar.ali
+W random%s		random.adb		random.ali
+W system.fat_flt%s	s-fatflt.ads		s-fatflt.ali
+W system.soft_links%s	s-soflin.adb		s-soflin.ali
+
+D ada.ads		20070406091342 9c7dd3ea
+D a-calend.ads		20090409232307 19486c30
+D a-except.ads		20090409232307 b54b55de
+D a-finali.ads		20090409232307 9eaacebd
+D a-filico.ads		20090409232307 9299732a
+D a-ioexce.ads		20070406091342 be0900a0
+D a-stream.ads		20090409232307 34aca5be
+D a-tags.ads		20090409232307 bfa07446
+D a-textio.ads		20090409232307 fe8af46e
+D a-tiflau.ads		20090409232307 ce2abdd4
+D a-tiflio.ads		20090409232307 5d91823c
+D a-tiflio.adb		20090409232307 e2036cd2
+D a-tiinau.ads		20090409232307 2625f681
+D a-tiinio.ads		20090409232307 949a7272
+D a-tiinio.adb		20090409232307 cf5588a9
+D a-unccon.ads		20070406091342 51e09df2
+D calendar.ads		20070406091342 81c96233
+D interfac.ads		20090409232307 a69cad5c
+D i-cstrea.ads		20090409232307 e1e064a9
+D random.ads		20080411210335 3c6844a0
+D random.adb		20080411210405 387bc4d4
+D system.ads		20110401034433 15e10948
+D s-crtl.ads		20090409232307 997234a1
+D s-exctab.ads		20090409232307 5c1c61ae
+D s-fatflt.ads		20090409232307 f2e0c28f
+D s-fatgen.ads		20090409232307 87841279
+D s-ficobl.ads		20090409232307 8bb681e5
+D s-finimp.ads		20090409232307 9449f4cb
+D s-finroo.ads		20090409232307 1408f9d1
+D s-parame.ads		20090409232307 f32e56e9
+D s-secsta.ads		20090409232307 7bae3621
+D s-soflin.ads		20090409232307 0c6fd39d
+D s-stache.ads		20090409232307 257b3be8
+D s-stalib.ads		20090409232307 52b793d5
+D s-stoele.ads		20090409232307 ed966df3
+D s-stoele.adb		20090409232307 e9998c78
+D s-stratt.ads		20090409232307 fef7c1da
+D s-traent.ads		20090409232307 bd5f2753
+D s-unstyp.ads		20090409232307 c0f9fae5
+D s-wchcon.ads		20090409232307 ab028799
+D testran.adb		20080411210448 fd9ad4ab
+X 1 ada.ads
+16K9*Ada 19e8 41|1r6 2r5 9r26 11r26
+X 9 a-textio.ads
+48K13*Text_IO 506e16 41|1w10 2r9 9r30 11r30
+X 11 a-tiflio.ads
+45k21*Float_IO 88e25 41|11r38
+67U14 Put 41|22r7[11]
+X 14 a-tiinio.ads
+45k21*Integer_IO 84e27 41|9r38
+X 20 random.ads
+3k9*Random 13e11 41|1w19 6r29
+5U14 Set_Seed 41|20r4[6]
+11V13 Random_Number{float} 41|22r11[6]
+X 41 testran.adb
+4U11*TestRan 4b11 25l5 25t12
+6K12 My_Random[20|3] 7r8
+9K12 Int_IO[14|45] 10r8
+11K12 Flt_IO[11|45] 12r8
+14N4 SIZE 15r30
+15A9 MY_ARRAY(integer)<integer> 16r15
+16a4 Events{15A9}
+17i4 Int_Rand{integer}
+21i8 Index{integer}
+

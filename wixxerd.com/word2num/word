@@ -1,0 +1,30 @@
+Dim a As String = "conan"
+Dim b As String = "the"
+Dim c As String = "barbarian"
+Dim d As Long = 0
+Dim f As Long = 0
+Dim g As Long = 0
+Dim h As Long = 0
+Dim i As String = ""
+Dim j As Long = 0
+Dim k As Long = 100000
+Dim n As Long = 100000000
+Dim l As Integer = 89
+Dim m As Integer = 6301
+Dim o As Long = 155755927
+Dim x As Integer
+For x = 0 To a.Length - 1
+    d = d + Asc(a.Substring(x, 1))
+Next
+For x = 0 To b.Length - 1
+    f = f + Asc(b.Substring(x, 1))
+Next
+For x = 0 To c.Length - 1
+    g = g + Asc(c.Substring(x, 1))
+Next
+h = Math.Floor(((g * f) + (f * d + k)) + n * d ^ 2)
+For x = 0 To h.ToString.Length - 1 Step 1
+    i = String.Concat(i, h.ToString.Substring(x, 1))
+Next
+i = i + ((l * m) * o)
+print i

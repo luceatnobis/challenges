@@ -1,0 +1,9 @@
+.ae_table_sky { width:140px;  }
+.ae_td_sky,.ae_image_td_sky { padding-bottom: 6px; padding-top: 6px; padding-left: 3px; padding-right: 3px; vertical-align:top; }
+.ae_bb_td_sky { padding-bottom: 4px; padding-top: 4px; padding-left: 3px; padding-right: 3px; vertical-align:top; }
+A.ae_title_sky, A.ae_image_link_sky {font-family: Verdana,Sans-Serif; font-size: 11px; font-style: normal; font-weight: bold; text-decoration: None;margin-bottom:10px; }
+.ae_desc_sky {font-family: Verdana,Sans-Serif; font-size: 10px; margin-top:10px;}
+.ae_click_count_sky {font-family: Verdana,Sans-Serif; font-size: 10px; font-style: normal; font-weight: normal; font-variant: normal;   }
+A.ae_powered_sky {font-family: Verdana,Sans-Serif; font-size: 10px; font-style: normal; font-weight: normal; font-variant: normal;  text-decoration: None; }
+A.ae_yourlink_sky {font-family: Verdana,Sans-Serif; font-size: 10px; font-style: normal; font-weight: bold; font-variant: normal; text-decoration: None; }
+A.ae_title_sky:hover, A.ae_powered_sky:hover, A.ae_yourlink_sky:hover, A.ae_image_link_sky:hover { text-decoration: Underline;}

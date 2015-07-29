@@ -1,0 +1,124 @@
+program pascaltocplus;
+uses crt;
+const
+ esc = #27;f1 = #59;f2 = #60;f3 = #61;f4 = #62;f5 = #63;f6 = #64;
+ f7 = #65;f8 = #66;f9 = #67;f10 = #68;f11 = #69;f12 = #70;
+ up =#72;down=#80;left=#75;right=#77;
+var
+data:text;
+procedure globalvariable;
+begin
+writeln(data,'ofstream file("lastone.txt");');
+writeln(data,'int a,b,c,d,e,f;');
+
+end;
+procedure head;
+begin
+writeln(data,'#include <iostream.h>');
+writeln(data,'#include <fstream.h>');
+writeln(data,'#include <conio.h>');
+writeln(data,'#include <io.h>');
+writeln(data,'#include <string.h>');
+end;
+procedure beginvoids;
+begin
+writeln(data,'void part1();');
+writeln(data,'void part2();');
+writeln(data,'void main()');
+writeln(data,'{');
+
+end;
+procedure part1;
+begin
+writeln(data,'file<<"Work out this part manually. It is assembly for the Pentium 2:"<<endl<<endl;');
+writeln(data,'file<<"Calculation: "<<endl;');
+writeln(data,'part1();');
+writeln(data,'file<<"          MOV EAX,A"<<endl;');
+writeln(data,'file<<"          ADD EAX,B"<<endl;');
+writeln(data,'file<<"          MOV G,EAX"<<endl;');
+
+end;
+procedure part3;
+begin
+writeln(data,'file<<"         MOV EAX,A"<<endl;');
+writeln(data,'file<<"         ADD EAX,C"<<endl;');
+writeln(data,'file<<"         MOV H,EAX"<<endl;');
+writeln(data,'file<<"         MOV EAX,B"<<endl;');
+writeln(data,'file<<"         ADD EAX,D"<<endl;');
+writeln(data,'file<<"         MOV I,EAX"<<endl;');
+
+end;
+procedure part2;
+begin
+writeln(data,'file<<"         MOV EAX,A"<<endl;');
+writeln(data,'file<<"         ADD EAX,E"<<endl;');
+writeln(data,'file<<"         MOV J,EAX"<<endl;');
+writeln(data,'file<<"         MOV EAX,C"<<endl;');
+writeln(data,'file<<"         ADD EAX,F"<<endl;');
+writeln(data,'file<<"         MOV K,EAX"<<endl;');
+writeln(data,'part1();');
+writeln(data,'part2();');
+writeln(data,'file<<"The password is the contents of G H I J K"<<endl;');
+writeln(data,'getch();');
+writeln(data,'}');
+
+end;
+procedure end1;
+begin
+writeln(data,'void part1()');
+writeln(data,'{');
+writeln(data,'file<<"         MOV EAX,C"<<endl;');
+writeln(data,'file<<"         MOV EBX,D"<<endl;');
+writeln(data,'file<<"         MOV D,EAX"<<endl;');
+writeln(data,'file<<"         MOV C,EBX"<<endl;');
+writeln(data,'}');
+writeln(data,'void part2()');
+writeln(data,'{');
+writeln(data,'a=40;');
+writeln(data,'b=44;');
+writeln(data,'c=23;');
+writeln(data,'d=72;');
+writeln(data,'e=25;');
+end;
+
+procedure end2;
+begin
+writeln(data,'f=43;');
+writeln(data,'file<<"             "<<endl;');
+writeln(data,'file<<"A        DW  "<<a<<endl;');
+writeln(data,'file<<"B        DW  "<<b<<endl;');
+writeln(data,'file<<"C        DW  "<<c<<endl;');
+writeln(data,'file<<"D        DW  "<<d<<endl;');
+writeln(data,'file<<"E        DW  "<<e<<endl;');
+writeln(data,'file<<"F        DW  "<<f<<endl;');
+writeln(data,'file<<"             "<<endl;');
+writeln(data,'file<<"             "<<endl;');
+writeln(data,'file<<"G        DW  0"<<endl;');
+writeln(data,'file<<"H        DW  0"<<endl;');
+writeln(data,'file<<"I        DW  0"<<endl;');
+writeln(data,'file<<"J        DW  0"<<endl;');
+writeln(data,'file<<"K        DW  0"<<endl;');
+writeln(data,'file<<"             "<<endl;');
+writeln(data,'file<<"             "<<endl;');
+writeln(data,'}');
+end;
+
+procedure writefile;
+begin
+clrscr;
+assign(data,'convert.txt');
+reset(data);
+rewrite(data);
+head;
+globalvariable;
+beginvoids;
+part1;
+part3;
+part2;
+end1;
+end2;
+close(data);
+end;
+begin
+writefile;
+end.

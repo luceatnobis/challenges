@@ -1,0 +1,39 @@
+<html>
+	<head>
+		<title>EG - JS10</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+		function checkPass( password )
+		{
+			
+			var count1 = 3, count2 = 5;
+			var sumof1 = 0, sumof2 = 0;
+		
+			var charlist = "BHFE8";
+			//var password = 'nlb\\h';
+		
+			for( i = 0; i < password.length; ++i ) { 
+				sumof1 += ( password.charCodeAt( i ) * count1 ); 
+				count1++;
+			}
+			alert(sumof1);
+			for( i = 0; i < charlist.length; ++i ) {
+				sumof2 += ( charlist.charCodeAt( i ) * count2 );
+				document.write((charlist.charCodeAt(i) * count2 ) / (count2-2)+" ");
+				count2++;
+			}
+			alert(sumof1);
+		}
+		</script>
+	
+		<form name="login" id="login" action="" method="post" onsubmit="checkPass(login.password.value)">
+			<table cellspacing="2">
+				<tr>
+					<td>Password:</td>
+					<td><input id="password" type="password" name="password" value="" size="30" maxlength="30" /></td>
+				</tr>
+			</table>
+		</form>
+	</body>
+</html>

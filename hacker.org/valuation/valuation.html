@@ -1,0 +1,12 @@
+<script type="text/javascript">
+var text1 = "123x456";
+var result = 0;
+for(counter = 0; counter <= text1.length; counter++){
+	var character = text1.charAt(counter);
+	if( isDigit(character) ) { 
+		document.write(character+" is a digit");
+ 		var num = parseInt(character);
+		result += num;
+	}
+}
+</script>

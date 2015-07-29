@@ -1,0 +1,39 @@
+0 1 2 3 4 5 6 7 8
+r ! t s i t ! p g
+
+9 10 11 10 2 13 14
+n  !  i  c p  ! t
+
+r!tsit!pgn!icp!t
+
+upperstring=(PMW3+POW1+PW8+PEW2+PW4+PW8+PW10+PxW7+PW9+PW7+PW10+PW6+PRW11+PxW7+PW10+PW8);
+PW7=pw.substring(8, 9);
+PRW11=pw.substring(2, 3);
+PMW3=pw.substring(3, 4);
+PW10=pw.substring(10, 11);
+PEW2=pw.substring(1, 2);
+PW6=pw.substring(7, 8);
+PxW7=pw.substring(5, 6);
+POW1=pw.substring(0, 1);
+PW8=pw.substring(6, 7);
+PW9=pw.substring(9, 10);
+PW4=pw.substring(4, 5);  
+
+POW1 = "!"
+PEW2 = "s"
+PRW11= "c"
+PMW3 = "r"
+PW4  = "i"
+PxW7 = "p"
+PW8  = "t"
+PW6  = "i"
+PW7  = "n"
+PW9  = "g"
+PW10 = "!"
+PW8  = "t"
+PW10 = "!"
+PxW7 = "p"
+PW10 = "!"
+PW8  = "t"
+
+=>!scripting!
