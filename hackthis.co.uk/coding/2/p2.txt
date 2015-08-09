@@ -1,0 +1,38 @@
+            ___  ____  _  _  ____  ____    _  _   __  
+           / __)(  _ \( \/ )(  _ \(_  _)  / )( \ /  \ 
+          ( (__  )   / )  /  ) __/  )(    \ \/ /(_/ /           
+           \___)(__\_)(__/  (__)   (__)    \__/  (__) 
+
+X-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-X
+
+ Another file from:                               the.almighty
+
+ Set out below is a guide on to how to 100% securely encrypt
+ your data, this is just an idea and no working program has
+ been create as of yet.
+
+
+ 1.  Re-number all visible ascii characters, so ! will now be
+     1 instead of 33 and " will be 2 instead of 34 and so on
+
+ 2.  Get each letter of your string and do the following:
+         a: Get its new ascii code value
+         b: Take this value, and subtract it from the total
+            number of visible ASCII characters
+         c: Get the character at this position
+         d: Get this characters original ascii value
+ 
+ 3.  Put all these values in a csv e.g. 61,72,71
+
+ Extras
+     All non-visible characters just appear as they are
+     e.g. space will just be blank 61, ,72,71
+
+
+             As this is stil in early development
+        we can not be held responsible for any errors.
+             For more info visit www.almighty.com
+
+                 "Play hard, and hack harder"
+  
+X-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-X
