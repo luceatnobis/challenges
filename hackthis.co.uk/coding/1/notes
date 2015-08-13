@@ -1,0 +1,10 @@
+alphabet = !"#$%&\'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\]^_`abcdefghijklmnopqrstuvwxyz{|}~
+nr_visible_character = 94
+H
+39
+94 - 39 = 55
+s[55]
+
+61
+alphabet[61] = '^'
+

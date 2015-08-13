@@ -1,0 +1,7 @@
+check:
+
+ary = [0,1,1,7,9,8]
+52-54:
+ary[0] = makehash(member_name, 0)
+ary[1] = makehash(password, 1)
+ary[2] = makehash("Login", 1)
