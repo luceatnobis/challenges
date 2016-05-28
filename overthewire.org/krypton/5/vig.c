@@ -266,7 +266,7 @@ float chi_squared(char* str){
 
 	for(i = 0; i < 26; i++){
 		
-		dummy = pow(( counts[i] - len * freqs[i]), 2);
+		dummy = pow((counts[i] - len * freqs[i]), 2);
 		dummy /= (len * freqs[i]);
 		chi_square += dummy;
 	}
