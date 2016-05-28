@@ -1,0 +1,25 @@
+Foremost version 1.5.7 by Jesse Kornblum, Kris Kendall, and Nick Mikus
+Audit File
+
+Foremost started at Fri Aug 14 04:36:48 2015
+Invocation: foremost backup.img 
+Output directory: /home/maddinw/challenges/ctf/icec.tf/epilepsy/goseling/output
+Configuration file: /etc/foremost.conf
+------------------------------------------------------------------
+File: backup.img
+Start: Fri Aug 14 04:36:48 2015
+Length: 1 MB (1474560 bytes)
+ 
+Num	 Name (bs=512)	       Size	 File Offset	 Comment 
+
+0:	00002562.jpg 	      81 KB 	    1311744 	 
+1:	00002726.jpg 	      50 KB 	    1395712 	 
+2:	00002828.jpg 	      14 KB 	    1447936 	 
+Finish: Fri Aug 14 04:36:48 2015
+
+3 FILES EXTRACTED
+	
+jpg:= 3
+------------------------------------------------------------------
+
+Foremost finished at Fri Aug 14 04:36:48 2015

@@ -1,0 +1,6 @@
+#!/usr/bin/env python3
+
+c = [x.rstrip("\n") for x in open("raw").readlines()]
+for l in c:
+    l = l.replace("\t", "0").replace(" ", "1")
+    print(int(l, 2))

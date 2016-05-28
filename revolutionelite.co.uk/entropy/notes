@@ -1,0 +1,2 @@
+1: create wordlist
+2: run ./entropy wordlist

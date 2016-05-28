@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+
+crunch 5 5 abcdefghijklmnopqrstuvwxyz > wordlist

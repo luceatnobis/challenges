@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+
+filename="mystery"
+counter=0
+while [ 1 ]
+do
+    grep "echo" $filename > /dev/null
+    echo $?
+    if [ $? -gt 0 ]
+    then
+        echo "Stopped at $filename"
+        exit
+    fi
+    sed "s/echo \"//g" $filename | sed "s/\" | base64 -d | bash//g" | base64 -d > $(($counter + 1))
+    filename=$counter
+    counter=$((counter + 1))
+done

